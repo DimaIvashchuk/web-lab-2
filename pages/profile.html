@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>PhoneBooker</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header bg-dark">
+        <div class="header__container container">
+          <nav class="header__nav navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <div class="logo-wrapper">PB</div>
+                PhoneBooker
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./profile.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./signup.html">Sign up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./signin.html">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__profile profile">
+          <div class="profile__container container">
+            <div class="profile__alert alert alert-danger" role="alert">
+              You need to sign in to get access to profile page!
+            </div>
+            <table class="profile__table table table-info">
+              <tbody>
+                <tr>
+                  <th>Name</th>
+                  <td>Unknown</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>Unknown</td>
+                </tr>
+                <tr>
+                  <th>Gender</th>
+                  <td>Unknown</td>
+                </tr>
+                <tr>
+                  <th>Birthday</th>
+                  <td>Unknown</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <footer class="footer bg-dark">
+        <div>2024 PhoneBooker ©</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.logo-wrapper {
+  padding: 5px;
+  background-color: rgb(101, 101, 101);
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.container {
+  padding: 20px;
+}
+
+.footer {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.page__about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.about__title {
+  font-weight: 500;
+  text-align: center;
+}
+
+.profile__alert {
+  margin-bottom: 30px;
+}
+
+.signin__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form {
+  max-width: 500px;
+}
+
+.form-group,
+.main-login__form {
+  width: 100%;
+}
+
+.main-login__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.mt-4 {
+  margin-top: 1rem !important;
+}
+
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.signup-btn {
+  margin-top: 20px;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home__button:hover {
+  background-color: #afafaf63;
+}
+
+.table__titles {
+  background-color: var(--bs-table-bg);
+}
+
+.table__titles th,
+td {
+  text-align: center;
+}
+
+.table__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.table__button {
+  width: 70px;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 610px) {
+  .table {
+    padding: 10px;
+  }
+
+  .table th {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .table td {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+
+  .table__button {
+    width: 50px;
+    font-size: 9px;
+    padding: 5px;
+  }
+
+  .home__container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.add-contact,
+.edit-contact {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-contact__close,
+.edit-contact__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 12px;
+}
+
+.add-contact__content,
+.edit-contact__content {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(168, 168, 168);
+  background-color: rgb(235, 235, 235);
+  position: relative;
+}
+
+.add-contact_active,
+.edit-contact_active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-contact input,
+.edit-contact input {
+  width: 100%;
+  font-size: 13px;
+}
+
+.add-contact__content,
+.edit-contact__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.add-contact__title,
+.edit-contact__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.add-contact__form,
+.edit-contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+  font-size: 15px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: max-content;
+}
+
+.me-sm-2 {
+  width: 200px;
+}
+
+.my-sm-0 {
+  font-size: 10px;
+  padding: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.page {
+  flex: 1 1 auto;
+  position: relative;
+}

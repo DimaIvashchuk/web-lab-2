@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PhoneBooker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header bg-dark">
+            <div class="header__container container">
+                <nav class="header__nav navbar navbar-expand-md navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <div class="logo-wrapper">PB</div>
+                            PhoneBooker
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarColor03">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home<span class="visually-hidden">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/profile.html">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/signup.html">Sign up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/signin.html">Sign in</a>
+                                </li>
+                            </ul>
+                          </div>
+                    </div>
+                </nav>
+            </div>    
+        </header>
+        <main class="page">
+            <section class="page__home home">
+                <div class="home__container container">
+                    <button type="button" class="btn btn-default home__button button-add">Add contact</button>
+                    <button type="button" class="btn btn-default home__button button-sort">Sort by name</button>
+                    <table class="table table-info table-main">
+                        <thead class="table__titles">
+                          <tr>
+                            <th data-sort="firstname">Firstname</th>
+                            <th>Lastname</th>
+                            <th>Phone number</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table__row">
+                            <td class="table__row__name">John</td>
+                            <td class="table__row__surname">Smith</td>
+                            <td class="table__row__number">+380501234567</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>      
+                          <tr class="table__row">
+                            <td class="table__row__name">Emily</td>
+                            <td class="table__row__surname">Johnson</td>
+                            <td class="table__row__number">+380632345678</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__row__name">Michael</td>
+                            <td class="table__row__surname">Brown</td>
+                            <td class="table__row__number">+380442345678</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__row__name">David</td>
+                            <td class="table__row__surname">Wilson</td>
+                            <td class="table__row__number">+380678901234</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__row__name">Sarah</td>
+                            <td class="table__row__surname">Martinez</td>
+                            <td class="table__row__number">+380933456789</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__row__name">Jessica</td>
+                            <td class="table__row__surname">Davis</td>
+                            <td class="table__row__number">+380991234567</td>
+                            <td class="table__buttons">
+                                <button class="btn btn-danger table__button button-delete">Delete</button>
+                                <button class="btn btn-warning table__button button-edit">Edit</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>             
+            </section>
+        </main>
+        <footer class="footer bg-dark">
+            <div>2024 PhoneBooker ©</div>
+        </footer>
+        <div class="add-contact">
+            <div class="add-contact__content">
+                <div class="add-contact__header">
+                    <div class="add-contact__title">Add contact</div>
+                    <div class="add-contact__close">X</div>
+                </div>
+                <div class="add-contact__body">
+                    <form action="#" class="add-contact__form">
+                        <input required placeholder="Name" name="name" type="text" class="add-contact__name">
+                        <input required placeholder="Surname" name="surname" type="text" class="add-contact__surname">
+                        <input required placeholder="Phone number" name="phone" type="text" class="add-contact__phone">
+                        <button type ="submit" class="btn btn-success add-contact__button">Add</button>
+                    </form>
+                    <p id="addErrorMessage"></p>
+                </div>
+            </div>
+        </div>
+        <div class="edit-contact">
+            <div class="edit-contact__content">
+                <div class="edit-contact__header">
+                    <div class="edit-contact__title">Edit contact</div>
+                    <div class="edit-contact__close">X</div>
+                </div>
+                <div class="edit-contact__body">
+                    <form action="#" class="edit-contact__form">
+                        <input type="hidden" id="editContactId">
+                        <input required placeholder="Name" id="editContactName" name="name" type="text" class="edit-contact__name">
+                        <input required placeholder="Surname" id="editContactSurname" name="surname" type="text" class="edit-contact__surname">
+                        <input required placeholder="Phone number" id="editContactPhone" name="phone" type="text" class="edit-contact__phone">
+                        <button type="submit" class="btn btn-success edit-contact__button">Edit</button>
+                    </form>
+                    <p id="editErrorMessage"></p>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="js/main.js"></script>
+</body>
+</html>
